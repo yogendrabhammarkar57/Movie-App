@@ -15,7 +15,7 @@ const MovieCard = ({movie : {title, vote_average, poster_path, release_date, ori
                     <img src="star.svg" alt="Star Icon" />
                     <p>{vote_average ? vote_average.toFixed(1) : 'N/A'}</p>
                 </div>
-                <span>.</span>
+                <span style={{paddingTop:'15px'}}>•</span>
                 <p className='year'>
                     {release_date ? release_date.split('-')[0] : 'N/A'}
                 </p>
